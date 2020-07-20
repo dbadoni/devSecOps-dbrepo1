@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+ deepakapp1: #this is my first service
+  image: nginx:deepakweb001 # this is the tag of image to build
+  build: https://github.com/dbadoni/devSecOps-dbrepo1.git # path of Dfile
+  container_name: deepakc11
+  ports:
+   - "1212:80"
